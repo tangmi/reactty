@@ -3,6 +3,9 @@ var reactty = require('..');
 
 var view = new reactty.View(fs.readFileSync(__dirname + '/simple-template.hbs').toString());
 
+view.config('wrap', true);
+
+
 setTimeout(function() {
 	view.data = {
 		"name": "Alan",
