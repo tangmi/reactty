@@ -23,4 +23,4 @@ setTimeout(function() {
 
 setTimeout(function() {
 	throw new Error('it also handles errors!');
-}, 10000);
+}, 20000);
