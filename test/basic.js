@@ -3,7 +3,7 @@ var reactty = require('..');
 
 var view = new reactty.View(fs.readFileSync(__dirname + '/simple-template.hbs').toString());
 
-view.config('wrap', true);
+// view.config('wrap', true); // haven't figured out how to architech a solution for this yet
 
 
 setTimeout(function() {
