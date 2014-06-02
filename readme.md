@@ -1,6 +1,6 @@
 # reactty
 
-have *YOU* ever wanted to make a cli app that looks and feels kinda maybe like a desktop or webapp? have you had to settle for spamming `console.log`s like a peasant? have *I* got a thing for *YOU*!
+have **YOU** ever wanted to make a cli app that looks and feels kinda maybe like a desktop or webapp? have you had to settle for spamming `console.log`s like a peasant? have **I** got a thing for **YOU**!
 
 introducing (for the first time ever) reactive mustache-like templating for TTY!!!
 
