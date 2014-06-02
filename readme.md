@@ -10,6 +10,11 @@ npm install reactty
 
 for now, check out `./test/basic.js` for features
 
+things to node:
+
+* if the output is too big, scroll around with the arrow keys (issue #2)
+* the display seen when resizing the window is a little bit broken (due to how node triggers its resize event, it will always be one step late)
+
 ```js
 var reactty = require('reactty');
 
@@ -21,6 +26,9 @@ var reactty = require('reactty');
  * rendered text, without needs for manually notifying the view of
  * changes. Neato!
  *
+ * It'll throw an error if the terminal running the program does not
+ * support TTY, and will tell you to fallback to peasant logging schemes
+ * for output.
  */
 var view = new reactty.View('Hi, my name is {{name}}');
 
