@@ -13,7 +13,12 @@ for now, check out `./test/basic.js` for features
 ```js
 var reactty = require('reactty');
 
-var view = new reactty.View(TEMPLATE_SOURCE_STRING[, optionInitalContext]);
+// new reactty.View(TEMPLATE_SOURCE_STRING[, optionInitalContext])
+var view = new reactty.View('Hi, my name is {{name}}');
 
-view.data = {} // update the context and the view will update accordingly
+// update the context and the view will update accordingly
+setTimeout(function() {
+	view.data.name = 'tangmi';
+}, 1000);
+
 ```
