@@ -28,7 +28,7 @@ things to node:
 var reactty = require('reactty');
 
 /*
- * new reactty.View(TEMPLATE_SOURCE_STRING[, optionalInitalContext])
+ * new reactty.View(TEMPLATE_SOURCE_STRING)
  *
  * Create a view that will clear and replace stdout with your template.
  * Any updates to the view's data will immediately reflect in the
