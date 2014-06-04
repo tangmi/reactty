@@ -23,6 +23,7 @@ things to node:
 
 * if the output is too big, scroll around with the arrow keys (issue #2)
 * the display seen when resizing the window is a little bit broken (due to how node triggers its resize event, it will always be one step late)
+* templates now support color and styles. the (tentative) syntax is available in `test/styles-template.hbs`
 
 ```js
 var reactty = require('reactty');
