@@ -17,6 +17,7 @@ setTimeout(function() {
 			"name": "Sally",
 			"age": "4"
 		}],
+		"unescaped": "<h1>NO ESCAPING</h1>"
 	};
 
 	setInterval(function() {
