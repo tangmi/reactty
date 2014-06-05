@@ -1,4 +1,8 @@
-{{#reset}}reset{{/reset}}
+{{!
+  (this is a comment)
+
+  some of these style depend on the compatibility of your terminal + font
+}}{{#reset}}reset{{/reset}}
 {{#bold}}bold{{/bold}}
 {{#italic}}italic{{/italic}}
 {{#underline}}underline{{/underline}}
@@ -23,3 +27,7 @@
 {{#bg 'magenta'}}bgMagenta{{/bg}}
 {{#bg 'cyan'}}bgCyan{{/bg}}
 {{#bg 'white'}}bgWhite{{/bg}}
+
+{{!
+  One can combine multiple styles by nesting
+}}{{#bg 'white'}}{{#fg 'magenta'}}{{#inverse}}{{#bold}}{{#underline}}underline bold inverse magenta bgWhite{{/underline}}{{/bold}}{{/inverse}}{{/fg}}{{/bg}}
