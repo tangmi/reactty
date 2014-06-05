@@ -1,34 +1,37 @@
 {
-	"name": "reactty",
-	"version": "0.0.13",
-	"description": "reactive mustache-like templating for a tty world",
-	"main": "index.js",
-	"scripts": {
-		"test": "node test/*.js",
-		"postpublish": "node ./scripts/postpublish.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/tangmi/reactty"
-	},
-	"keywords": [
-		"tty",
-		"mustache",
-		"reactive",
-		"templating"
-	],
-	"author": "tangmi",
-	"license": "Artistic License 2.0",
-	"bugs": {
-		"url": "https://github.com/tangmi/reactty/issues"
-	},
-	"homepage": "https://github.com/tangmi/reactty",
-	"dependencies": {
-		"handlebars": "^2.0.0-alpha.4",
-		"node-gameloop": "0.0.6",
-		"ansi": "^0.3.0",
-		"keypress": "^0.2.1",
-		"chalk": "^0.4.0",
-		"lodash": "^2.4.1"
-	}
+  "name": "reactty",
+  "version": "0.0.13",
+  "description": "reactive mustache-like templating for a tty world",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/*.js",
+    "postpublish": "./node_modules/.bin/srun --script=postpublish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tangmi/reactty"
+  },
+  "keywords": [
+    "tty",
+    "mustache",
+    "reactive",
+    "templating"
+  ],
+  "author": "tangmi",
+  "license": "Artistic License 2.0",
+  "bugs": {
+    "url": "https://github.com/tangmi/reactty/issues"
+  },
+  "homepage": "https://github.com/tangmi/reactty",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4",
+    "node-gameloop": "0.0.6",
+    "ansi": "^0.3.0",
+    "keypress": "^0.2.1",
+    "chalk": "^0.4.0",
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "srun": "*"
+  }
 }
