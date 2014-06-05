@@ -1,6 +1,6 @@
 {
 	"name": "reactty",
-	"version": "0.0.12",
+	"version": "0.0.13",
 	"description": "reactive mustache-like templating for a tty world",
 	"main": "index.js",
 	"scripts": {
