@@ -47,4 +47,8 @@ setTimeout(function() {
 	view.data.name = 'tangmi';
 }, 1000);
 
+// TODO:
+//   * talk about color helpers `test/styles.js`
+//   * talk about .stop() and .start() `test/exit.js`
+
 ```
