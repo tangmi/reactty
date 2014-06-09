@@ -14,7 +14,7 @@ just follow the steps:
 # usage
 
 ```
-npm install reactty
+npm install --save reactty
 ```
 
 for now, check out `./test/basic.js` for features
