@@ -21,10 +21,12 @@ setTimeout(function() {
 	};
 
 	setInterval(function() {
+		// no need to notify the view of updates, just change the context
 		view.data.time = +new Date();
 	}, 1000);
-}, 2000);
+}, 1000);
 
 setTimeout(function() {
+	// we'll actually get the stack trace printed out
 	throw new Error('it also handles errors!');
 }, 20000);
