@@ -19,11 +19,13 @@ npm install reactty
 
 for now, check out `./test/basic.js` for features
 
-things to node:
+things to note:
 
-* if the output is too big, scroll around with the arrow keys (issue #2)
+* if the output is too big, scroll around with the arrow keys (issue #2) or the mouse wheel (issue #12). if excess data exists above or below, indicator arrows will appear (issue #4)
 * the display seen when resizing the window is a little bit broken (due to how node triggers its resize event, it will always be one step late)
-* templates now support color and styles. the (tentative) syntax is available in `test/styles-template.hbs`
+* templates now support color and styles. the (tentative) syntax is available in `test/styles-template.hbs` (issue #8)
+* display will only re-render if its contents have changed (issue #10)
+* on a safe (code 0) exit from the program, the full output, as defined in the template, will be printed for easy copy/paste of the output (issue #6)
 
 ```js
 var reactty = require('reactty');
