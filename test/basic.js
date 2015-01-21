@@ -5,6 +5,15 @@ var view = new reactty.View(fs.readFileSync(__dirname + '/simple-template.hbs').
 
 // view.config('wrap', true); // haven't figured out how to architech a solution for this yet
 
+// test custom helper, same api as handlebar's .registerHelper()
+// see: http://handlebarsjs.com/#helpers
+reactty.registerHelper('fmtTimestamp', function(time) {
+	if (time) {
+		return (new Date(time));
+	} else {
+		return null;
+	}
+});
 
 setTimeout(function() {
 	view.data = {

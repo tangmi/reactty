@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/tangmi/reactty",
   "dependencies": {
-    "handlebars": "^2.0.0-alpha.4",
+    "handlebars": "^2.0.0",
     "node-gameloop": "0.1.0",
     "ansi": "^0.3.0",
     "keypress": "^0.2.1",
-    "chalk": "^0.4.0",
+    "chalk": "^0.5.1",
     "lodash": "^2.4.1"
   },
   "devDependencies": {
